@@ -91,7 +91,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=福建泰宁丹霞地貌山水风光全景，壮丽景色，自然风景，高画质，适合作为背景&image_size=landscape_16_9') center/cover;
+    background: url('https://picsum.photos/seed/taningbg/1920/1080') center/cover;
     opacity: 0.3;
 }
 
