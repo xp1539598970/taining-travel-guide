@@ -1,1 +1,289 @@
-const gameData={characters:[{id:'char1',name:'可爱女孩',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=cute%20anime%20girl%20avatar%20pink%20hair%20big%20eyes%20kawaii%20full%20body%20white%20background&image_size=portrait_4_3'},{id:'char2',name:'优雅淑女',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=elegant%20anime%20girl%20avatar%20black%20hair%20ponytail%20graceful%20full%20body%20white%20background&image_size=portrait_4_3'},{id:'char3',name:'甜美少女',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=sweet%20anime%20girl%20avatar%20blonde%20hair%20curly%20cute%20full%20body%20white%20background&image_size=portrait_4_3'},{id:'char4',name:'俏皮萝莉',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=playful%20anime%20loli%20girl%20avatar%20purple%20hair%20twin%20tails%20full%20body%20white%20background&image_size=portrait_4_3'},{id:'char5',name:'温柔女神',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=gentle%20anime%20goddess%20girl%20avatar%20long%20hair%20blue%20eyes%20serene%20full%20body%20white%20background&image_size=portrait_4_3'},{id:'char6',name:'元气少女',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=energetic%20anime%20girl%20avatar%20orange%20hair%20short%20cheerful%20full%20body%20white%20background&image_size=portrait_4_3'}],clothes:{tops:[{id:'top1',name:'粉色T恤',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=pink%20cute%20t-shirt%20white%20background%20flat%20design&image_size=square'},{id:'top2',name:'蓝色连衣裙',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=blue%20elegant%20dress%20white%20background%20flat%20design&image_size=square'},{id:'top3',name:'白色衬衫',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=white%20blouse%20shirt%20white%20background%20flat%20design&image_size=square'},{id:'top4',name:'红色卫衣',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=red%20hoodie%20white%20background%20flat%20design&image_size=square'},{id:'top5',name:'紫色吊带',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=purple%20camisole%20top%20white%20background%20flat%20design&image_size=square'},{id:'top6',name:'黄色毛衣',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=yellow%20knit%20sweater%20white%20background%20flat%20design&image_size=square'}],bottoms:[{id:'bottom1',name:'牛仔裤',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=blue%20jeans%20white%20background%20flat%20design&image_size=square'},{id:'bottom2',name:'短裙',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=pink%20short%20skirt%20white%20background%20flat%20design&image_size=square'},{id:'bottom3',name:'长裤',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=black%20long%20pants%20white%20background%20flat%20design&image_size=square'},{id:'bottom4',name:'百褶裙',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=blue%20pleated%20skirt%20white%20background%20flat%20design&image_size=square'},{id:'bottom5',name:'短裤',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=white%20shorts%20white%20background%20flat%20design&image_size=square'},{id:'bottom6',name:'长裙',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=purple%20long%20skirt%20white%20background%20flat%20design&image_size=square'}],shoes:[{id:'shoe1',name:'运动鞋',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=white%20sneakers%20white%20background%20flat%20design&image_size=square'},{id:'shoe2',name:'高跟鞋',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=pink%20high%20heels%20white%20background%20flat%20design&image_size=square'},{id:'shoe3',name:'凉鞋',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=blue%20sandals%20white%20background%20flat%20design&image_size=square'},{id:'shoe4',name:'靴子',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=brown%20boots%20white%20background%20flat%20design&image_size=square'},{id:'shoe5',name:'拖鞋',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=yellow%20flip%20flops%20white%20background%20flat%20design&image_size=square'},{id:'shoe6',name:'皮鞋',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=black%20leather%20shoes%20white%20background%20flat%20design&image_size=square'}]},accessories:[{id:'acc1',name:'发箍',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=pink%20hairband%20cute%20white%20background%20flat%20design&image_size=square'},{id:'acc2',name:'项链',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=gold%20necklace%20jewelry%20white%20background%20flat%20design&image_size=square'},{id:'acc3',name:'耳环',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=sparkling%20earrings%20jewelry%20white%20background%20flat%20design&image_size=square'},{id:'acc4',name:'帽子',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=cute%20beret%20hat%20white%20background%20flat%20design&image_size=square'},{id:'acc5',name:'包包',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=purse%20handbag%20white%20background%20flat%20design&image_size=square'},{id:'acc6',name:'眼镜',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=cute%20glasses%20white%20background%20flat%20design&image_size=square'}],scenes:[{id:'scene1',name:'海滩',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=tropical%20beach%20sunny%20ocean%20palm%20trees%20landscape_16_9'},{id:'scene2',name:'花园',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=beautiful%20flower%20garden%20roses%20butterflies%20spring%20landscape_16_9'},{id:'scene3',name:'城堡',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=fantasy%20castle%20magical%20sunset%20fairytale%20landscape_16_9'},{id:'scene4',name:'森林',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=enchanted%20forest%20mystical%20trees%20sunlight%20landscape_16_9'},{id:'scene5',name:'城市',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=modern%20city%20skyline%20night%20lights%20urban%20landscape_16_9'},{id:'scene6',name:'雪山',image:'https://neeko-copilot.bytedance.net/api/text2image?prompt=snowy%20mountain%20winter%20white%20snow%20blue%20sky%20landscape_16_9'}]};class DressUpGame{constructor(){this.currentTab='character';this.selectedCharacter=null;this.selectedClothes={top:null,bottom:null,shoe:null};this.selectedAccessory=null;this.currentScene=null;this.savedOutfits=this.loadOutfits();this.init()}init(){this.setupEventListeners();this.showTab('character')}setupEventListeners(){document.querySelectorAll('.tab-btn').forEach(btn=>{btn.addEventListener('click',(e)=>{const tab=e.currentTarget.dataset.tab;this.showTab(tab)})});document.getElementById('saveBtn').addEventListener('click',()=>this.saveOutfit());document.getElementById('exportBtn').addEventListener('click',()=>this.exportData());document.getElementById('resetBtn').addEventListener('click',()=>this.resetGame());document.addEventListener('keydown',(e)=>{if(e.ctrlKey||e.metaKey){switch(e.key.toLowerCase()){case's':e.preventDefault();this.saveOutfit();break;case'n':e.preventDefault();this.resetGame();break}}})}showTab(tab){this.currentTab=tab;document.querySelectorAll('.tab-btn').forEach(btn=>btn.classList.remove('active'));document.querySelector(`[data-tab="${tab}"]`).classList.add('active');switch(tab){case'character':this.renderCharacterPanel();break;case'clothes':this.renderClothesPanel();break;case'scene':this.renderScenePanel();break;case'gallery':this.renderGalleryPanel();break}}renderCharacterPanel(){const panelTitle=document.getElementById('panelTitle');const categoryTabs=document.getElementById('categoryTabs');const panelContent=document.getElementById('panelContent');panelTitle.textContent='选择角色';categoryTabs.innerHTML='';panelContent.innerHTML='';gameData.characters.forEach(char=>{const card=this.createItemCard(char,'character');panelContent.appendChild(card)})}renderClothesPanel(){const panelTitle=document.getElementById('panelTitle');const categoryTabs=document.getElementById('categoryTabs');const panelContent=document.getElementById('panelContent');panelTitle.textContent='服装搭配';const categories=[{id:'tops',name:'上衣'},{id:'bottoms',name:'下装'},{id:'shoes',name:'鞋子'},{id:'accessories',name:'配饰'}];categoryTabs.innerHTML='';categories.forEach(cat=>{const tab=document.createElement('button');tab.className=`category-tab ${this.currentClothesCategory===cat.id?'active':''}`;tab.dataset.category=cat.id;tab.textContent=cat.name;tab.addEventListener('click',()=>{this.currentClothesCategory=cat.id;this.renderClothesPanel()});categoryTabs.appendChild(tab)});panelContent.innerHTML='';let items=[];if(this.currentClothesCategory==='tops'){items=gameData.clothes.tops}else if(this.currentClothesCategory==='bottoms'){items=gameData.clothes.bottoms}else if(this.currentClothesCategory==='shoes'){items=gameData.clothes.shoes}else{items=gameData.accessories}items.forEach(item=>{const card=this.createItemCard(item,this.currentClothesCategory);panelContent.appendChild(card)})}renderScenePanel(){const panelTitle=document.getElementById('panelTitle');const categoryTabs=document.getElementById('categoryTabs');const panelContent=document.getElementById('panelContent');panelTitle.textContent='场景切换';categoryTabs.innerHTML='';panelContent.innerHTML='';gameData.scenes.forEach(scene=>{const card=this.createItemCard(scene,'scene');panelContent.appendChild(card)})}renderGalleryPanel(){const panelTitle=document.getElementById('panelTitle');const categoryTabs=document.getElementById('categoryTabs');const panelContent=document.getElementById('panelContent');panelTitle.textContent='我的作品';categoryTabs.innerHTML='';if(this.savedOutfits.length===0){panelContent.innerHTML='<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">还没有保存的作品</div><div class="empty-state-text" style="font-size: 0.8rem; margin-top: 8px;">快去创作你的第一个搭配吧！</div></div>';return}panelContent.innerHTML='';panelContent.style.gridTemplateColumns='repeat(auto-fill, minmax(140px, 1fr))';this.savedOutfits.forEach((outfit,index)=>{const item=document.createElement('div');item.className='gallery-item';item.innerHTML=` <img src="${outfit.preview}" alt="${outfit.name}"><div class="gallery-item-info"><div>${outfit.name}</div><div style="font-size: 0.65rem; opacity: 0.8;">${new Date(outfit.date).toLocaleDateString()}</div></div>`;item.addEventListener('click',()=>this.loadOutfit(outfit));panelContent.appendChild(item)})}createItemCard(item,type){const card=document.createElement('div');card.className=`item-card${this.isSelected(item,type)?' selected':''}`;card.dataset.type=type;card.dataset.id=item.id;card.innerHTML=` <img src="${item.image}" alt="${item.name}" loading="lazy"><div class="item-name">${item.name}</div>`;card.addEventListener('click',()=>this.selectItem(item,type));card.addEventListener('mouseenter',()=>card.style.transform='translateY(-4px) scale(1.02)');card.addEventListener('mouseleave',()=>{if(!card.classList.contains('selected')){card.style.transform='translateY(0) scale(1)'}});return card}isSelected(item,type){switch(type){case'character':return this.selectedCharacter?.id===item.id;case'tops':return this.selectedClothes.top?.id===item.id;case'bottoms':return this.selectedClothes.bottom?.id===item.id;case'shoes':return this.selectedClothes.shoe?.id===item.id;case'accessories':return this.selectedAccessory?.id===item.id;case'scene':return this.currentScene?.id===item.id;default:return false}}selectItem(item,type){this.showLoading();setTimeout(()=>{switch(type){case'character':this.selectedCharacter=item;break;case'tops':this.selectedClothes.top=item;break;case'bottoms':this.selectedClothes.bottom=item;break;case'shoes':this.selectedClothes.shoe=item;break;case'accessories':this.selectedAccessory=item;break;case'scene':this.currentScene=item;break}this.updateCanvas();this.refreshPanel();this.hideLoading();this.showToast(`已选择 ${item.name}`,'success')},300)}updateCanvas(){const sceneLayer=document.getElementById('sceneLayer');const characterBody=document.getElementById('characterBody');const clothesLayer=document.getElementById('clothesLayer');const accessoryLayer=document.getElementById('accessoryLayer');if(this.currentScene){sceneLayer.style.backgroundImage=`url(${this.currentScene.image})`}else{sceneLayer.style.background='linear-gradient(180deg, #87CEEB 0%, #E0F7FA 100%)'}if(this.selectedCharacter){characterBody.innerHTML=`<img src="${this.selectedCharacter.image}" alt="${this.selectedCharacter.name}" style="height: 400px; object-fit: contain;">`}else{characterBody.innerHTML=''}clothesLayer.innerHTML='';if(this.selectedClothes.top){const topImg=document.createElement('img');topImg.src=this.selectedClothes.top.image;topImg.style.height='200px';topImg.style.objectFit='contain';clothesLayer.appendChild(topImg)}accessoryLayer.innerHTML='';if(this.selectedAccessory){const accImg=document.createElement('img');accImg.src=this.selectedAccessory.image;accImg.style.height='80px';accImg.style.objectFit='contain';accImg.style.marginBottom='320px';accessoryLayer.appendChild(accImg)}}refreshPanel(){switch(this.currentTab){case'character':this.renderCharacterPanel();break;case'clothes':this.renderClothesPanel();break;case'scene':this.renderScenePanel();break}}showLoading(){document.getElementById('loadingOverlay').classList.add('active')}hideLoading(){document.getElementById('loadingOverlay').classList.remove('active')}showToast(message,type='info'){const container=document.getElementById('toastContainer');const toast=document.createElement('div');toast.className=`toast toast-${type}`;const icons={success:'✅',error:'❌',info:'ℹ️'};toast.innerHTML=` <span class="toast-icon">${icons[type]}</span><span class="toast-message">${message}</span>`;container.appendChild(toast);setTimeout(()=>{toast.classList.add('fade-out');setTimeout(()=>toast.remove(),300)},3000)}saveOutfit(){if(!this.selectedCharacter){this.showToast('请先选择一个角色！','error');return}const canvas=document.createElement('canvas');const ctx=canvas.getContext('2d');canvas.width=800;canvas.height=600;if(this.currentScene){const sceneImg=new Image();sceneImg.crossOrigin='anonymous';sceneImg.onload=()=>{ctx.drawImage(sceneImg,0,0,800,600);this.drawCharacter(ctx)};sceneImg.src=this.currentScene.image}else{const gradient=ctx.createLinearGradient(0,0,0,600);gradient.addColorStop(0,'#87CEEB');gradient.addColorStop(1,'#E0F7FA');ctx.fillStyle=gradient;ctx.fillRect(0,0,800,600);this.drawCharacter(ctx)}}drawCharacter(ctx){const charImg=new Image();charImg.crossOrigin='anonymous';charImg.onload=()=>{ctx.drawImage(charImg,300,150,200,400);if(this.selectedClothes.top){const topImg=new Image();topImg.crossOrigin='anonymous';topImg.onload=()=>{ctx.drawImage(topImg,320,200,160,150);this.finishSave(ctx)};topImg.src=this.selectedClothes.top.image}else{this.finishSave(ctx)}};charImg.src=this.selectedCharacter.image}finishSave(ctx){if(this.selectedAccessory){const accImg=new Image();accImg.crossOrigin='anonymous';accImg.onload=()=>{ctx.drawImage(accImg,360,170,80,80);this.saveOutfitToStorage(ctx)};accImg.src=this.selectedAccessory.image}else{this.saveOutfitToStorage(ctx)}}saveOutfitToStorage(ctx){const preview=ctx.canvas.toDataURL('image/png');const outfitName=`搭配${this.savedOutfits.length+1}`;const outfit={id:Date.now().toString(),name:outfitName,date:new Date().toISOString(),preview:preview,character:this.selectedCharacter,clothes:{...this.selectedClothes},accessory:this.selectedAccessory,scene:this.currentScene};this.savedOutfits.push(outfit);localStorage.setItem('dressup-outfits',JSON.stringify(this.savedOutfits));this.showToast(`作品 "${outfitName}" 已保存！`,'success');if(this.currentTab==='gallery'){this.renderGalleryPanel()}}loadOutfit(outfit){this.selectedCharacter=outfit.character;this.selectedClothes=outfit.clothes;this.selectedAccessory=outfit.accessory;this.currentScene=outfit.scene;this.updateCanvas();this.showTab('character');this.showToast(`已加载 "${outfit.name}"`,'success')}loadOutfits(){const stored=localStorage.getItem('dressup-outfits');return stored?JSON.parse(stored):[]}exportData(){const data={savedOutfits:this.savedOutfits,currentState:{character:this.selectedCharacter,clothes:this.selectedClothes,accessory:this.selectedAccessory,scene:this.currentScene}};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`dressup-data-${Date.now()}.json`;a.click();URL.revokeObjectURL(url);this.showToast('数据已导出！','success')}resetGame(){this.selectedCharacter=null;this.selectedClothes={top:null,bottom:null,shoe:null};this.selectedAccessory=null;this.currentScene=null;this.updateCanvas();this.showTab('character');this.showToast('已重置游戏','info')}}const currentClothesCategory='tops';document.addEventListener('DOMContentLoaded',()=>{new DressUpGame()});
+const gameData = {
+    characters: [
+        { id: 'char1', name: '可爱女孩', color: '#FFE4E1', hairColor: '#FF6B9D' },
+        { id: 'char2', name: '优雅淑女', color: '#F5DEB3', hairColor: '#1a1a1a' },
+        { id: 'char3', name: '甜美少女', color: '#FFEFD5', hairColor: '#FFD700' },
+        { id: 'char4', name: '俏皮萝莉', color: '#FFE4E1', hairColor: '#9932CC' },
+        { id: 'char5', name: '温柔女神', color: '#F0E68C', hairColor: '#2F4F4F' },
+        { id: 'char6', name: '元气少女', color: '#FFE4E1', hairColor: '#FF8C00' }
+    ],
+    clothes: [
+        { id: 'clothes1', name: '粉色连衣裙', color: '#FF69B4' },
+        { id: 'clothes2', name: '蓝色礼服', color: '#4169E1' },
+        { id: 'clothes3', name: '白色衬衫', color: '#FFF' },
+        { id: 'clothes4', name: '红色卫衣', color: '#DC143C' },
+        { id: 'clothes5', name: '紫色长裙', color: '#9932CC' },
+        { id: 'clothes6', name: '黄色毛衣', color: '#FFD700' }
+    ],
+    scenes: [
+        { id: 'scene1', name: '海滩', bg: 'linear-gradient(180deg, #87CEEB 0%, #00CED1 50%, #FFE4B5 100%)' },
+        { id: 'scene2', name: '花园', bg: 'linear-gradient(180deg, #98FB98 0%, #228B22 50%, #FFB6C1 100%)' },
+        { id: 'scene3', name: '城堡', bg: 'linear-gradient(180deg, #87CEEB 0%, #DA70D6 50%, #FFD700 100%)' },
+        { id: 'scene4', name: '森林', bg: 'linear-gradient(180deg, #228B22 0%, #006400 50%, #90EE90 100%)' },
+        { id: 'scene5', name: '城市', bg: 'linear-gradient(180deg, #1a1a1a 0%, #444 50%, #FF4500 100%)' },
+        { id: 'scene6', name: '雪山', bg: 'linear-gradient(180deg, #87CEEB 0%, #FFF 50%, #E0E0E0 100%)' }
+    ]
+};
+
+class DressUpGame {
+    constructor() {
+        this.selectedChar = null;
+        this.selectedClothes = null;
+        this.selectedScene = null;
+        this.savedOutfits = JSON.parse(localStorage.getItem('dressup-outfits') || '[]');
+        this.init();
+    }
+
+    init() {
+        this.bindEvents();
+        this.renderCharacters();
+    }
+
+    bindEvents() {
+        document.getElementById('saveBtn').addEventListener('click', () => this.saveOutfit());
+        document.getElementById('resetBtn').addEventListener('click', () => this.reset());
+        document.getElementById('exportBtn').addEventListener('click', () => this.exportData());
+    }
+
+    showTab(tabName) {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+        
+        document.getElementById('panelContent').innerHTML = '';
+        document.getElementById('panelTitle').textContent = {
+            character: '选择角色',
+            clothes: '选择服装',
+            scene: '选择场景',
+            gallery: '我的作品'
+        }[tabName];
+
+        if (tabName === 'character') this.renderCharacters();
+        else if (tabName === 'clothes') this.renderClothes();
+        else if (tabName === 'scene') this.renderScenes();
+        else if (tabName === 'gallery') this.renderGallery();
+    }
+
+    renderCharacters() {
+        const content = document.getElementById('panelContent');
+        content.style.gridTemplateColumns = 'repeat(3, 1fr)';
+        
+        gameData.characters.forEach(char => {
+            const card = this.createCard(char, 'character');
+            card.innerHTML = `
+                <div style="height: 70px; display: flex; align-items: center; justify-content: center;">
+                    <svg width="60" height="60" viewBox="0 0 60 80">
+                        <circle cx="30" cy="25" r="18" fill="${char.color}"/>
+                        <circle cx="24" cy="22" r="3" fill="#333"/>
+                        <circle cx="36" cy="22" r="3" fill="#333"/>
+                        <ellipse cx="30" cy="32" rx="4" ry="3" fill="#FFB6C1"/>
+                        <rect x="22" y="42" width="16" height="20" rx="5" fill="${char.hairColor}"/>
+                    </svg>
+                </div>
+                <div class="item-name">${char.name}</div>
+            `;
+            card.addEventListener('click', () => this.selectCharacter(char));
+            content.appendChild(card);
+        });
+    }
+
+    renderClothes() {
+        const content = document.getElementById('panelContent');
+        content.style.gridTemplateColumns = 'repeat(3, 1fr)';
+        
+        gameData.clothes.forEach(clothes => {
+            const card = this.createCard(clothes, 'clothes');
+            card.innerHTML = `
+                <div style="height: 70px; display: flex; align-items: center; justify-content: center;">
+                    <svg width="50" height="60" viewBox="0 0 50 60">
+                        <path d="M10 10 L10 50 Q25 45 40 50 L40 10 Q25 5 10 10" fill="${clothes.color}"/>
+                        <rect x="15" y="15" width="20" height="12" rx="3" fill="white" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="item-name">${clothes.name}</div>
+            `;
+            card.addEventListener('click', () => this.selectClothes(clothes));
+            content.appendChild(card);
+        });
+    }
+
+    renderScenes() {
+        const content = document.getElementById('panelContent');
+        content.style.gridTemplateColumns = 'repeat(2, 1fr)';
+        
+        gameData.scenes.forEach(scene => {
+            const card = this.createCard(scene, 'scene');
+            card.innerHTML = `
+                <div style="height: 70px; ${scene.bg}; display: flex; align-items: center; justify-content: center;">
+                    <span style="color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); font-weight: bold;">🌅</span>
+                </div>
+                <div class="item-name">${scene.name}</div>
+            `;
+            card.addEventListener('click', () => this.selectScene(scene));
+            content.appendChild(card);
+        });
+    }
+
+    renderGallery() {
+        const content = document.getElementById('panelContent');
+        content.style.gridTemplateColumns = 'repeat(auto-fill, minmax(130px, 1fr))';
+        
+        if (this.savedOutfits.length === 0) {
+            content.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 30px; color: #999;">📭 还没有保存的作品</div>';
+            return;
+        }
+
+        this.savedOutfits.forEach(outfit => {
+            const item = document.createElement('div');
+            item.className = 'gallery-item';
+            item.innerHTML = `<img src="${outfit.preview}" style="width:100%; height:100px; object-fit:cover;"><div style="padding:5px; background:rgba(0,0,0,0.6); color:white; font-size:0.7rem;">${outfit.name}</div>`;
+            item.addEventListener('click', () => this.loadOutfit(outfit));
+            content.appendChild(item);
+        });
+    }
+
+    createCard(item, type) {
+        const card = document.createElement('div');
+        card.className = `item-card${this.isSelected(item, type) ? ' selected' : ''}`;
+        card.dataset.type = type;
+        card.dataset.id = item.id;
+        return card;
+    }
+
+    isSelected(item, type) {
+        switch(type) {
+            case 'character': return this.selectedChar?.id === item.id;
+            case 'clothes': return this.selectedClothes?.id === item.id;
+            case 'scene': return this.selectedScene?.id === item.id;
+            default: return false;
+        }
+    }
+
+    selectCharacter(char) {
+        this.selectedChar = char;
+        this.updateCanvas();
+        this.showTab('character');
+        this.showToast(`已选择 ${char.name}`);
+    }
+
+    selectClothes(clothes) {
+        this.selectedClothes = clothes;
+        this.updateCanvas();
+        this.showTab('clothes');
+        this.showToast(`已选择 ${clothes.name}`);
+    }
+
+    selectScene(scene) {
+        this.selectedScene = scene;
+        document.getElementById('sceneDisplay').style.background = scene.bg;
+        this.showTab('scene');
+        this.showToast(`已选择 ${scene.name}`);
+    }
+
+    updateCanvas() {
+        const display = document.getElementById('characterDisplay');
+        if (!this.selectedChar) {
+            display.innerHTML = '';
+            return;
+        }
+
+        display.innerHTML = `
+            <svg width="150" height="300" viewBox="0 0 100 200" class="character-svg">
+                <circle cx="50" cy="45" r="25" fill="${this.selectedChar.color}"/>
+                <circle cx="42" cy="40" r="4" fill="#333"/>
+                <circle cx="58" cy="40" r="4" fill="#333"/>
+                <ellipse cx="50" cy="55" rx="5" ry="3" fill="#FFB6C1"/>
+                <path d="M44 62 Q50 68 56 62" stroke="#FF6B9D" stroke-width="2" fill="none"/>
+                <ellipse cx="35" cy="50" rx="5" ry="8" fill="${this.selectedChar.hairColor}"/>
+                <ellipse cx="65" cy="50" rx="5" ry="8" fill="${this.selectedChar.hairColor}"/>
+                <ellipse cx="50" cy="35" rx="18" ry="12" fill="${this.selectedChar.hairColor}"/>
+                <path d="M25 80 L25 130 Q50 125 75 130 L75 80" fill="${this.selectedClothes?.color || '#FF6B9D'}"/>
+                <ellipse cx="50" cy="80" rx="25" ry="8" fill="${this.selectedClothes?.color || '#FF6B9D'}"/>
+                <path d="M35 130 L30 170 L45 168" fill="#FFD700"/>
+                <path d="M65 130 L70 170 L55 168" fill="#FFD700"/>
+            </svg>
+        `;
+    }
+
+    saveOutfit() {
+        if (!this.selectedChar) {
+            this.showToast('请先选择角色！', 'error');
+            return;
+        }
+        
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 300;
+        canvas.height = 400;
+        
+        if (this.selectedScene) {
+            const colors = this.selectedScene.bg.match(/#[A-Fa-f0-9]{6}/g);
+            const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, colors[0]);
+            gradient.addColorStop(0.5, colors[1]);
+            gradient.addColorStop(1, colors[2]);
+            ctx.fillStyle = gradient;
+        } else {
+            ctx.fillStyle = '#87CEEB';
+        }
+        ctx.fillRect(0, 0, 300, 400);
+        
+        const preview = canvas.toDataURL();
+        const outfit = {
+            id: Date.now(),
+            name: `搭配${this.savedOutfits.length + 1}`,
+            preview,
+            char: this.selectedChar,
+            clothes: this.selectedClothes,
+            scene: this.selectedScene
+        };
+        
+        this.savedOutfits.push(outfit);
+        localStorage.setItem('dressup-outfits', JSON.stringify(this.savedOutfits));
+        this.showToast('保存成功！');
+    }
+
+    loadOutfit(outfit) {
+        this.selectedChar = outfit.char;
+        this.selectedClothes = outfit.clothes;
+        this.selectedScene = outfit.scene;
+        if (outfit.scene) this.selectScene(outfit.scene);
+        this.updateCanvas();
+        this.showTab('character');
+    }
+
+    exportData() {
+        const data = JSON.stringify(this.savedOutfits, null, 2);
+        const blob = new Blob([data], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'dressup-data.json';
+        a.click();
+        this.showToast('导出成功！');
+    }
+
+    reset() {
+        this.selectedChar = null;
+        this.selectedClothes = null;
+        this.selectedScene = null;
+        document.getElementById('sceneDisplay').style.background = 'linear-gradient(180deg, #87CEEB, #E0F7FA)';
+        document.getElementById('characterDisplay').innerHTML = '';
+        this.showTab('character');
+        this.showToast('已重置');
+    }
+
+    showToast(msg, type = 'success') {
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        toast.innerHTML = `<span>${msg}</span>`;
+        document.getElementById('toastContainer').appendChild(toast);
+        setTimeout(() => toast.remove(), 2000);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const game = new DressUpGame();
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => game.showTab(btn.dataset.tab));
+    });
+});
