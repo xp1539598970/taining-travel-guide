@@ -3,255 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三明泰宁旅游攻略 - 探索世界自然遗产地</title>
+    <title>暖暖甜心换装 - 7k7k小游戏</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">🏞️ 泰宁旅游</div>
-            <ul class="nav-menu">
-                <li><a href="#hero">首页</a></li>
-                <li><a href="#attractions">景点</a></li>
-                <li><a href="#food">美食</a></li>
-                <li><a href="#tips">贴士</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-section">
+                <div class="logo-icon">👗</div>
+                <h1 class="app-title">暖暖甜心换装</h1>
+            </div>
+            <div class="header-actions">
+                <button class="action-btn" id="saveBtn" title="Ctrl+S 保存搭配">
+                    <span class="btn-icon">💾</span>
+                    <span class="btn-text">保存</span>
+                </button>
+                <button class="action-btn" id="exportBtn" title="导出数据">
+                    <span class="btn-icon">📤</span>
+                    <span class="btn-text">导出</span>
+                </button>
+                <button class="action-btn" id="resetBtn" title="Ctrl+N 新建">
+                    <span class="btn-icon">🔄</span>
+                    <span class="btn-text">重置</span>
+                </button>
+            </div>
+        </header>
 
-    <section id="hero" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title animate-fade-in">三明泰宁旅游攻略</h1>
-            <p class="hero-subtitle animate-fade-in-delay-1">世界自然遗产 · 丹霞地貌奇观 · 千年古城风韵</p>
-            <a href="#attractions" class="cta-button animate-fade-in-delay-2">开始探索 →</a>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
+        <nav class="nav-tabs">
+            <button class="tab-btn active" data-tab="character">
+                <span class="tab-icon">👧</span>
+                <span class="tab-text">角色选择</span>
+            </button>
+            <button class="tab-btn" data-tab="clothes">
+                <span class="tab-icon">👚</span>
+                <span class="tab-text">服装搭配</span>
+            </button>
+            <button class="tab-btn" data-tab="scene">
+                <span class="tab-icon">🌅</span>
+                <span class="tab-text">场景切换</span>
+            </button>
+            <button class="tab-btn" data-tab="gallery">
+                <span class="tab-icon">📷</span>
+                <span class="tab-text">作品展示</span>
+            </button>
+        </nav>
 
-    <section id="attractions" class="section">
-        <div class="container">
-            <h2 class="section-title">✨ 必游景点</h2>
-            <p class="section-subtitle">泰宁六大核心景点，带你领略丹霞之美</p>
-            <div class="cards-grid">
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/VgQ41wSDsq" alt="大金湖">
-                        <div class="card-icon">🚣</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>大金湖</h3>
-                        <p class="card-tag">⭐ 世界自然遗产</p>
-                        <p class="card-desc">中国东南最美的丹霞地貌，乘船游览丹山碧水，欣赏水上一线天、甘露寺等奇观。</p>
-                        <p class="card-tip">💡 最佳游览时间：上午7-10点，光线最美</p>
+        <main class="main-content">
+            <div class="game-canvas-container">
+                <div class="canvas-wrapper" id="canvasWrapper">
+                    <div class="scene-layer" id="sceneLayer"></div>
+                    <div class="character-layer" id="characterLayer">
+                        <div class="character-body" id="characterBody"></div>
+                        <div class="clothes-layer" id="clothesLayer"></div>
+                        <div class="accessory-layer" id="accessoryLayer"></div>
                     </div>
                 </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/NZsd1wSDdg" alt="上清溪">
-                        <div class="card-icon">🎋</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>上清溪</h3>
-                        <p class="card-tag">🚣 竹筏漂流</p>
-                        <p class="card-desc">九十九曲、八十八滩，乘竹筏漂流于丹崖之间，听艄公讲古老传说。</p>
-                        <p class="card-tip">💡 记得带水枪，打水仗超好玩！</p>
-                    </div>
-                </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/FzZA1wSDdg" alt="泰宁古城">
-                        <div class="card-icon">🏛️</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>泰宁古城</h3>
-                        <p class="card-tag">📜 千年历史</p>
-                        <p class="card-desc">漫步青石古街，探访尚书第古建筑群，感受客家文化与江南水乡的完美融合。</p>
-                        <p class="card-tip">💡 夜景超美，一定要晚上来！</p>
-                    </div>
-                </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/mTnw1wSDdg" alt="寨下大峡谷">
-                        <div class="card-icon">🥾</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>寨下大峡谷</h3>
-                        <p class="card-tag">🌿 天然氧吧</p>
-                        <p class="card-desc">丹霞洞穴博物馆，3条峡谷交汇，徒步其中，感受地质奇观的震撼。</p>
-                        <p class="card-tip">💡 穿舒适运动鞋，备好饮用水</p>
-                    </div>
-                </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/WhSs1wSDsq" alt="猫儿山">
-                        <div class="card-icon">🐱</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>猫儿山</h3>
-                        <p class="card-tag">🌄 俯瞰金湖</p>
-                        <p class="card-desc">形似巨猫的丹霞山峰，登顶可俯瞰大金湖全景，是摄影爱好者的天堂。</p>
-                        <p class="card-tip">💡 日出时分来，景色最壮观</p>
-                    </div>
-                </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/JqUU1wSDsq" alt="明清园">
-                        <div class="card-icon">🎭</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>明清园</h3>
-                        <p class="card-tag">🎨 古建筑收藏</p>
-                        <p class="card-desc">收藏全国古建筑精品，精美的木雕、石雕令人叹为观止，感受中国建筑之美。</p>
-                        <p class="card-tip">💡 请导游讲解，收获更多故事</p>
-                    </div>
+                <div class="loading-overlay" id="loadingOverlay">
+                    <div class="loading-spinner"></div>
+                    <span class="loading-text">正在加载...</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="food" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">🍜 特色美食</h2>
-            <p class="section-subtitle">舌尖上的泰宁，客家风味等你来尝</p>
-            <div class="cards-grid">
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/cF2O1wSDnf" alt="暖菇包">
-                        <div class="card-icon">🥟</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>暖菇包</h3>
-                        <p class="card-tag">🌱 清明时令</p>
-                        <p class="card-desc">泰宁最具代表性的小吃，用鼠曲草和糯米制成，馅料丰富，一口一个满足！</p>
-                    </div>
+            <aside class="tool-panel" id="toolPanel">
+                <div class="panel-header">
+                    <h2 class="panel-title" id="panelTitle">选择角色</h2>
+                    <div class="category-tabs" id="categoryTabs"></div>
                 </div>
+                <div class="panel-content" id="panelContent"></div>
+            </aside>
+        </main>
 
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/SWvn1wSDnf" alt="金湖有机鱼">
-                        <div class="card-icon">🐟</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>金湖有机鱼</h3>
-                        <p class="card-tag">🐟 一鱼多吃</p>
-                        <p class="card-desc">大金湖野生有机鱼，肉质细嫩鲜美，鱼头汤、红烧鱼片、鱼丸都是必点！</p>
-                    </div>
-                </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/EVxp1wSDnf" alt="碧玉卷">
-                        <div class="card-icon">🌯</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>碧玉卷</h3>
-                        <p class="card-tag">🌾 早餐必备</p>
-                        <p class="card-desc">韭菜汁与大米磨浆煎制，薄如蝉翼，卷入各种馅料，香嫩可口，早餐来一套！</p>
-                    </div>
-                </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/Dp901wSDnf" alt="游浆豆腐">
-                        <div class="card-icon">🧈</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>游浆豆腐</h3>
-                        <p class="card-tag">🥢 传统手艺</p>
-                        <p class="card-desc">不用石膏不用盐卤，用酸浆自然发酵，豆香浓郁，可煎可炒可炖汤！</p>
-                    </div>
-                </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/Wsdk1wSDnf" alt="红菇炖鸡">
-                        <div class="card-icon">🍲</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>红菇炖鸡</h3>
-                        <p class="card-tag">🍄 山珍美味</p>
-                        <p class="card-desc">野生红菇搭配本地土鸡，汤色红润甘甜，滋补养生，一定要尝尝！</p>
-                    </div>
-                </div>
-
-                <div class="card animate-on-scroll">
-                    <div class="card-image">
-                        <img src="https://aka.doubaocdn.com/s/WWVt1wSDnf" alt="客家米酒">
-                        <div class="card-icon">🍶</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>客家米酒</h3>
-                        <p class="card-tag">🥂 醇香浓郁</p>
-                        <p class="card-desc">泰宁人家家自酿的米酒，香甜醇厚，度数不高，女生也能小酌几杯！</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tips" class="section">
-        <div class="container">
-            <h2 class="section-title">📝 旅行贴士</h2>
-            <p class="section-subtitle">实用信息，让你的旅程更省心</p>
-            <div class="tips-grid">
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">🎫</div>
-                    <h3>门票建议</h3>
-                    <p>推荐购买联票，包含大金湖+上清溪+寨下大峡谷+古城等景点，比单独买划算很多！记得提前在网上预约。</p>
-                </div>
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">🚗</div>
-                    <h3>交通方式</h3>
-                    <p>高铁到泰宁站，出站后有旅游专线。景区之间建议包车或坐旅游公交，自驾更自由但停车要注意。</p>
-                </div>
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">🏨</div>
-                    <h3>住宿推荐</h3>
-                    <p>住古城里最有感觉，有很多特色民宿。旺季记得提前预订，价格会更实惠。</p>
-                </div>
-                <div class="tip-card animate-on-scroll">
-                    <div class="tip-icon">🎒</div>
-                    <h3>行前准备</h3>
-                    <p>防晒霜、驱蚊水、舒适运动鞋、雨伞、充电宝必备！丹霞地貌拍照穿浅色衣服更出片哦~</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>🏞️ 泰宁旅游攻略</h3>
-                    <p>探索世界自然遗产，发现泰宁之美</p>
-                </div>
-                <div class="footer-section">
-                    <h4>快速链接</h4>
-                    <ul>
-                        <li><a href="#attractions">必游景点</a></li>
-                        <li><a href="#food">特色美食</a></li>
-                        <li><a href="#tips">旅行贴士</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>祝你旅途愉快！</h4>
-                    <p>愿你在泰宁收获美好的回忆 ✨</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 泰宁旅游攻略. 用心分享，快乐旅行！</p>
-            </div>
-        </div>
-    </footer>
+        <div class="toast-container" id="toastContainer"></div>
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
